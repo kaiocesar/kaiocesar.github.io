@@ -23,3 +23,7 @@ a.navbar-brand{
 .navbar-nav > li > a{
 	color: #FFF;
 }
+
+.badge{
+	display: none;
+}
