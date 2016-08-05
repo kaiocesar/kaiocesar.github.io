@@ -2,7 +2,7 @@ angular.module('app', ['ngRoute', 'ngResource'])
 	.config(function($routeProvider){
 		$routeProvider
 			.when('/',{
-				templateUrl: 'assets/app/views/home.html',
+				templateUrl: 'assets/app/views/about.html',
 				controller: 'CtrlHome'
 			})
 			.when('/projetos', {
@@ -10,6 +10,9 @@ angular.module('app', ['ngRoute', 'ngResource'])
 			})
 			.when('/contatos', {
 				templateUrl: 'assets/app/views/contatos.html'
+			})
+			.when('/about',{
+				templateUrl: 'assets/app/views/about.html'
 			});
 	})
 	.controller('CtrlHome', ['$scope', '$resource', function($scope, $resource){
