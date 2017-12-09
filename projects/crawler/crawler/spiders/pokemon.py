@@ -22,7 +22,7 @@ class PokemonSpider(scrapy.Spider):
                 p_link = 'https://pokemondb.net/pokedex/%s' % (p_name.lower())
 
                 p_line = OrderedDict()
-                p_line['id'] = type(p_id),
+                p_line['id'] = p_id,
                 p_line['name'] = p_name,
                 p_line['link'] = p_link,
                 p_line['categories'] = p_categories
